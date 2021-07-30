@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class desafiof1 {
     public static void main(String[] args) {
-/* uma equipe de formula1 deseja calcular o numero minimo de litros que deverá ser colocar no tanque de um de seus
-carros para que ele percorrer um determinado numeros de voltas até o preimeiro reabastecimento. Escreva um programa que
+/* Uma equipe de formula1 deseja calcular o numero minimo de litros que deverá ser colocar no tanque de um de seus
+carros para que ele percorrer um determinado numeros de voltas até o primeiro reabastecimento. Escreva um programa que
 leia o comprimento da pista (em metros), o numero total de voltas a serem percorridas no grande premio, o numero de
 reabastecimentos desejados e o consumo de combustivel do carro (em KM/L).O objetivo é calculular o número mínimo de
 litros neccessário até o primeiro reabastecimento*/
