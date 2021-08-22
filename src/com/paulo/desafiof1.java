@@ -11,28 +11,28 @@ reabastecimentos desejados e o consumo de combustivel do carro (em KM/L).O objet
 litros neccessário até o primeiro reabastecimento*/
 
         Scanner entrada = new Scanner(System.in);
-        int ntv;//número total de voltas.
-        int nrb;//número de reabastecimento.
-        double ctpm;//comprimento total da pista em metros.
-        double cckm;//consumo de combustível.
-        double nmvr;//número minimo de litros para o primeiro reabastecimento.
+        int voltas;//número total de voltas.
+        int reabastecimentos;//número de reabastecimento.
+        double comprimento;//comprimento total da pista em metros.
+        double consumo;//consumo de combustível.
+        double mininoDeLitros;//número minimo de litros para o primeiro reabastecimento.
 
         System.out.print("Digite o comprimento total da pista em metros: ");
-        ctpm = entrada.nextDouble();
+        comprimento = entrada.nextDouble();
         System.out.print("Digite o número total de voltas: ");
-        ntv = entrada.nextInt();
+        voltas = entrada.nextInt();
         System.out.print("Digite o consumo de combustível em km/l: ");
-        cckm = entrada.nextDouble();
+        consumo = entrada.nextDouble();
         System.out.print("Digite o número de reabastecimentos: ");
-        nrb = entrada.nextInt();
+        reabastecimentos = entrada.nextInt();
 
         /* É necessário converter o valor total da pista de metros para KM,
          *É necessário somar 1 ao número de reabastecimentos, devido ao carro precisar ser abastecido para o incio da corrida.
          */
 
-        nmvr = (ctpm/1000)*ntv/cckm/(nrb+1);
+        mininoDeLitros = (comprimento/1000)*voltas/consumo/(reabastecimentos+1);
 
-        System.out.print("O número mínimo de litros para o 1° reabastecimento é: " + nmvr);
+        System.out.print("O número mínimo de litros para o 1° reabastecimento é: " + mininoDeLitros);
 
 
     }
